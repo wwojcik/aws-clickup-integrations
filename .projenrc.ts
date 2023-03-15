@@ -17,7 +17,6 @@ const project = new nx_monorepo.NxMonorepoProject({
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
-project.addGitIgnore(".envrc");
 project.addGitIgnore(".nx/cache");
 new Recommended(project);
 new CodeOfConduct(project, {
