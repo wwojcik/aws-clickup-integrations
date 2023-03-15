@@ -90,6 +90,15 @@
         }
       ]
     },
+    "eslint:json": {
+      "name": "eslint:json",
+      "description": "lint all the json files",
+      "steps": [
+        {
+          "exec": "eslint --no-eslintrc --no-error-on-unmatched-pattern --config .eslintrc-json.json --ext .json ."
+        }
+      ]
+    },
     "install": {
       "name": "install",
       "description": "Install project dependencies and update lockfile (non-frozen)",
@@ -124,9 +133,35 @@
       "name": "pre-compile",
       "description": "Prepare the project for compilation"
     },
+    "prepare": {
+      "name": "prepare",
+      "description": "installs husky",
+      "steps": [
+        {
+          "exec": "husky install"
+        }
+      ]
+    },
+    "spellcheck": {
+      "name": "spellcheck",
+      "description": "check all the files for spelling errors",
+      "steps": [
+        {
+          "exec": "cspell lint --gitignore --dot --show-suggestions -e \".git/**\" \"**\""
+        }
+      ]
+    },
     "test": {
       "name": "test",
-      "description": "Run tests"
+      "description": "Run tests",
+      "steps": [
+        {
+          "spawn": "spellcheck"
+        },
+        {
+          "spawn": "eslint:json"
+        }
+      ]
     },
     "upgrade": {
       "name": "upgrade",
