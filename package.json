@@ -12,8 +12,6 @@
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
-    "run-many": "npx projen run-many",
-    "synth-workspace": "npx projen synth-workspace",
     "prepare": "npx projen prepare",
     "spellcheck": "npx projen spellcheck",
     "test": "npx projen test",

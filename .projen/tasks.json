@@ -2,11 +2,25 @@
   "tasks": {
     "build": {
       "name": "build",
-      "description": "Full release build for all affected projects",
+      "description": "Full release build",
       "steps": [
         {
-          "exec": "npx nx run-many --target=build --output-style=stream --nx-bail",
-          "receiveArgs": true
+          "spawn": "default"
+        },
+        {
+          "spawn": "pre-compile"
+        },
+        {
+          "spawn": "compile"
+        },
+        {
+          "spawn": "post-compile"
+        },
+        {
+          "spawn": "test"
+        },
+        {
+          "spawn": "package"
         }
       ]
     },
@@ -44,13 +58,7 @@
     },
     "compile": {
       "name": "compile",
-      "description": "Only compile for all affected projects",
-      "steps": [
-        {
-          "exec": "npx nx run-many --target=compile --output-style=stream --nx-bail",
-          "receiveArgs": true
-        }
-      ]
+      "description": "Only compile"
     },
     "default": {
       "name": "default",
@@ -75,11 +83,10 @@
     },
     "eslint": {
       "name": "eslint",
-      "description": "Runs eslint against the codebase for all affected projects",
+      "description": "Runs eslint against the codebase",
       "steps": [
         {
-          "exec": "npx nx run-many --target=eslint --output-style=stream --nx-bail",
-          "receiveArgs": true
+          "exec": "eslint --ext .ts,.tsx --fix --no-error-on-unmatched-pattern . test build-tools projenrc .projenrc.ts"
         }
       ]
     },
@@ -112,23 +119,11 @@
     },
     "package": {
       "name": "package",
-      "description": "Creates the distribution package for all affected projects",
-      "steps": [
-        {
-          "exec": "npx nx run-many --target=package --output-style=stream --nx-bail",
-          "receiveArgs": true
-        }
-      ]
+      "description": "Creates the distribution package"
     },
     "post-compile": {
       "name": "post-compile",
-      "description": "Runs after successful compilation for all affected projects",
-      "steps": [
-        {
-          "exec": "npx nx run-many --target=post-compile --output-style=stream --nx-bail",
-          "receiveArgs": true
-        }
-      ]
+      "description": "Runs after successful compilation"
     },
     "post-upgrade": {
       "name": "post-upgrade",
@@ -136,32 +131,7 @@
     },
     "pre-compile": {
       "name": "pre-compile",
-      "description": "Prepare the project for compilation for all affected projects",
-      "steps": [
-        {
-          "exec": "npx nx run-many --target=pre-compile --output-style=stream --nx-bail",
-          "receiveArgs": true
-        }
-      ]
-    },
-    "run-many": {
-      "name": "run-many",
-      "description": "Run task against multiple workspace projects",
-      "steps": [
-        {
-          "exec": "npx nx run-many",
-          "receiveArgs": true
-        }
-      ]
-    },
-    "synth-workspace": {
-      "name": "synth-workspace",
-      "description": "Synthesize workspace",
-      "steps": [
-        {
-          "exec": "npx projen"
-        }
-      ]
+      "description": "Prepare the project for compilation"
     },
     "prepare": {
       "name": "prepare",
@@ -183,12 +153,8 @@
     },
     "test": {
       "name": "test",
-      "description": "Run tests for all affected projects",
+      "description": "Run tests",
       "steps": [
-        {
-          "exec": "npx nx run-many --target=test --output-style=stream --nx-bail",
-          "receiveArgs": true
-        },
         {
           "spawn": "spellcheck"
         },
@@ -255,11 +221,10 @@
     },
     "watch": {
       "name": "watch",
-      "description": "Watch & compile in the background for all affected projects",
+      "description": "Watch & compile in the background",
       "steps": [
         {
-          "exec": "npx nx run-many --target=watch --output-style=stream --skip-nx-cache --nx-ignore-cycles --nx-bail",
-          "receiveArgs": true
+          "exec": "tsc --build -w"
         }
       ]
     }

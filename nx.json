@@ -16,11 +16,6 @@
       }
     }
   },
-  "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*"
-    ]
-  },
   "implicitDependencies": {},
   "targetDependencies": {
     "build": [

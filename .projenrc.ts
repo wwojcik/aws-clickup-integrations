@@ -1,4 +1,8 @@
-import { CodeOfConduct, Contributors, Recommended } from "@mountainpass/cool-bits-for-projen";
+import {
+  CodeOfConduct,
+  Contributors,
+  Recommended,
+} from "@mountainpass/cool-bits-for-projen";
 import { nx_monorepo } from "aws-prototyping-sdk";
 const project = new nx_monorepo.NxMonorepoProject({
   defaultReleaseBranch: "main",
