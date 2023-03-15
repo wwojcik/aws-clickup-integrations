@@ -1,6 +1,18 @@
 {
   "dependencies": [
     {
+      "name": "@commitlint/cli",
+      "type": "build"
+    },
+    {
+      "name": "@commitlint/config-conventional",
+      "type": "build"
+    },
+    {
+      "name": "@mountainpass/cool-bits-for-projen",
+      "type": "build"
+    },
+    {
       "name": "@nrwl/cli",
       "type": "build"
     },
@@ -28,6 +40,10 @@
       "type": "build"
     },
     {
+      "name": "cspell",
+      "type": "build"
+    },
+    {
       "name": "eslint-config-prettier",
       "type": "build"
     },
@@ -44,12 +60,32 @@
       "type": "build"
     },
     {
+      "name": "eslint-plugin-jsdoc",
+      "type": "build"
+    },
+    {
+      "name": "eslint-plugin-jsonc",
+      "type": "build"
+    },
+    {
+      "name": "eslint-plugin-no-secrets",
+      "type": "build"
+    },
+    {
       "name": "eslint-plugin-prettier",
+      "type": "build"
+    },
+    {
+      "name": "eslint-plugin-unicorn",
       "type": "build"
     },
     {
       "name": "eslint",
       "version": "^8",
+      "type": "build"
+    },
+    {
+      "name": "husky",
       "type": "build"
     },
     {
