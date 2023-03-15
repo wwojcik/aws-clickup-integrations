@@ -2,6 +2,7 @@
   "files": [
     ".commitlintrc.json",
     ".cspell.json",
+    ".editorconfig",
     ".eslintignore",
     ".eslintrc-json.json",
     ".eslintrc.json",

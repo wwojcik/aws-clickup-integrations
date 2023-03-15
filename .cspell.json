@@ -47,6 +47,7 @@
     "vscode-eslint",
     "esbenp",
     "prettier-vscode",
+    "editorconfig",
     "streetsidesoftware",
     "code-spell-checker",
     "applypatch-msg",
@@ -90,6 +91,7 @@
     "project-words"
   ],
   "ignorePaths": [
+    ".editorconfig",
     ".eslintignore",
     ".eslintrc-json.json",
     ".eslintrc.json",
