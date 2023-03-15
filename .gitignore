@@ -4,6 +4,7 @@
 !/.projen/deps.json
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
+!/.github/workflows/auto-approve.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -30,6 +31,7 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
+.nx/cache
 !/.projenrc.js
 !/.github/workflows/build.yml
 !/.mergify.yml
@@ -48,7 +50,6 @@ jspm_packages/
 !/.nxignore
 !/.nx/plugins/nx-monorepo-plugin.js
 !/nx.json
-.nx/cache
 !/.vscode/settings.json
 !/.eslintignore
 !/.eslintrc-json.json
