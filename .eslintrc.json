@@ -62,7 +62,6 @@
         "devDependencies": [
           "**/test/**",
           "**/build-tools/**",
-          "**/projenrc/**",
           ".projenrc.ts",
           "projenrc/**/*.ts"
         ],
@@ -170,15 +169,6 @@
   "overrides": [
     {
       "files": [
-        ".projenrc.ts"
-      ],
-      "rules": {
-        "@typescript-eslint/no-require-imports": "off",
-        "import/no-extraneous-dependencies": "off"
-      }
-    },
-    {
-      "files": [
         ".projenrc.js",
         ".projenrc.ts"
       ],
@@ -224,6 +214,15 @@
       "rules": {
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/return-await": "off"
+      }
+    },
+    {
+      "files": [
+        ".projenrc.ts"
+      ],
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off",
+        "import/no-extraneous-dependencies": "off"
       }
     }
   ]
