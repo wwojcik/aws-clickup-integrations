@@ -78,8 +78,7 @@
       "description": "Runs eslint against the codebase for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=eslint --output-style=stream --nx-bail",
-          "receiveArgs": true
+          "exec": "eslint --ext .ts,.tsx --fix --no-error-on-unmatched-pattern . test build-tools projenrc .projenrc.ts"
         }
       ]
     },
