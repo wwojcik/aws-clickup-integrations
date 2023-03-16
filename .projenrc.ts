@@ -15,8 +15,7 @@ const project = new nx_monorepo.NxMonorepoProject({
   autoApproveUpgrades: true,
   gitignore: [".nx/cache"],
   autoApproveOptions: {
-    allowedUsernames: ["wwojcik", "dependabot[bot]", "github-actions"],
-    secret: "GITHUB_TOKEN",
+    allowedUsernames: ["wwojcik", "dependabot[bot]", "github-bot"],
   },
   ...Recommended.defaultProjectOptions,
 
@@ -31,7 +30,7 @@ recommender.vscodeExtensionRecommendations.addRecommendations(
 );
 
 new CodeOfConduct(project, {
-  contactMethod: "email: wojtaswojcik@gmail.com",
+  contactMethod: "wojtaswojcik@gmail.com",
 });
 
 new Contributors(project, {
@@ -44,7 +43,7 @@ new IniFile(project, ".editorconfig", {
     ["root"]: true,
     ["*"]: {
       ["end_of_line"]: "lf",
-      ["charset"]: "utf-8",
+      ["charset"]: "utf8",
       ["insert_final_newline"]: true,
       ["trim_trailing_whitespace"]: true,
     },
