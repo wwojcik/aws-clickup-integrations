@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.97":
-  version "2.2.106"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.106.tgz#444c6d0045611fbceda44feb14c24b4b8050ed95"
-  integrity sha512-iZHFZJL7gdM2xw0qFqOww4eojxeyhHsaIuUgFrPo0vl7/0LhZzXBDJPnL5yGBWPWOs2tEaYvjkxYrpoLcpnCKg==
+  version "2.2.107"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.107.tgz#a7263006aa38896351632e6af986a22ecc530075"
+  integrity sha512-TFE39Y1FjobS5qTaovVxO2BbtLFNgaeid6dNEij9t3NydXFKORoHfVOGUWAEpMHKtkAy+gHMDZA1dI9rN8KE0A==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -21,9 +21,9 @@
   integrity sha512-U1ntiX8XiMRRRH5J1IdC+1t5CE89015cwyt5U63Cpk0GnMlN5+h9WsWMlKlPXZR4rdq/m806JRlBMRpBUB2Dhw==
 
 "@aws-cdk/asset-node-proxy-agent-v5@^2.0.77":
-  version "2.0.85"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.85.tgz#98eff3d393e8ea9246128b5330eb3f0f7ecb5331"
-  integrity sha512-o+k40Gw+h6MqzOe1eU3X+P3S9DAR1IPwxHKS999KQJNkvSGJHg5RVV1bW6EibQwA9ndqXvkym3LrXtIH9KP+Hg==
+  version "2.0.86"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.86.tgz#1f8ba8f61e46baca5f3e8edfcc09b2433257558f"
+  integrity sha512-0Irmv9iKCgZiwgoqr2VvSLJuaEYA1NyxiLmlGKSEq0Kw2RfMoTXX5q8BUZfVjYroqxsyjqcJmCw5Abc34ZBV5A==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.18.6":
   version "7.18.6"
@@ -2775,10 +2775,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-nag@^2.22.36:
-  version "2.22.36"
-  resolved "https://registry.yarnpkg.com/cdk-nag/-/cdk-nag-2.22.36.tgz#d12b44d16d7ae597cb7b9037ed16790b310e569b"
-  integrity sha512-L0Eae4I7gig5EGSQ1f/gVYVgmuhBfPZSqshX5A3UKLAK2+X+dWNSwCroZ75GucY/LiDZH/bef8ztdOS/+k83pA==
+cdk-nag@^2.22.37:
+  version "2.22.37"
+  resolved "https://registry.yarnpkg.com/cdk-nag/-/cdk-nag-2.22.37.tgz#5231186efe5f9ffae2800dce124e074d82b58f6d"
+  integrity sha512-ytk3RM9CQPSida6w0TTPzVGd6KCTODH5rYXMvMsRuE5skLKDtMDzS7nnO9n71XagJL8CIK+WElqwLCVIKN3nGg==
 
 chalk@4.1.2, chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
@@ -3402,9 +3402,9 @@ ejs@^3.1.7:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.284:
-  version "1.4.330"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.330.tgz#4740378db7160d7210afb29800c74048cdf10a99"
-  integrity sha512-PqyefhybrVdjAJ45HaPLtuVaehiSw7C3ya0aad+rvmV53IVyXmYRk3pwIOb2TxTDTnmgQdn46NjMMaysx79/6Q==
+  version "1.4.331"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.331.tgz#c8ea823968563ef2cbb3495233e9e16c48c54a4a"
+  integrity sha512-tdtr9y9oJl8VDiS+HeB6e/JDJqdDGjIk3yRfEMHm5rDnWQ/D5SbafybAayInxolbfbH6pouV5g7ZUAwE/WVtHw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"

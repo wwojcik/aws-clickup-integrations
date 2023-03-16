@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.69.0",
-    "cdk-nag": "^2.22.36",
+    "cdk-nag": "^2.22.37",
     "constructs": "^10.1.279"
   },
   "main": "lib/index.js",
