@@ -39,7 +39,7 @@
     "aws-prototyping-sdk": "^0.14.11",
     "cspell": "*",
     "eslint": "^8",
-    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-node": "^0.3.7",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
@@ -50,16 +50,16 @@
     "eslint-plugin-unicorn": "^46.0.0",
     "husky": "^8.0.3",
     "npm-check-updates": "^16.7.13",
-    "prettier": "^2.8.4",
-    "projen": "^0.68.13",
+    "prettier": "^2.8.5",
+    "projen": "^0.68.15",
     "syncpack": "^9.8.4",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.69.0",
-    "cdk-nag": "^2.23.3",
-    "constructs": "^10.1.283"
+    "cdk-nag": "^2.23.4",
+    "constructs": "^10.1.284"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
