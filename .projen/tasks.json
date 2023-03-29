@@ -5,7 +5,7 @@
       "description": "Full release build for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=build --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=build --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -47,7 +47,7 @@
       "description": "Only compile for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=compile --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=compile --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -114,7 +114,7 @@
       "description": "Creates the distribution package for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=package --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=package --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -124,7 +124,7 @@
       "description": "Runs after successful compilation for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=post-compile --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=post-compile --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -138,7 +138,7 @@
       "description": "Prepare the project for compilation for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=pre-compile --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=pre-compile --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -157,7 +157,7 @@
       "description": "Run task against multiple workspace projects",
       "steps": [
         {
-          "exec": "npx nx run-many",
+          "exec": "yarn nx run-many",
           "receiveArgs": true
         }
       ]
@@ -176,7 +176,7 @@
       "description": "Synthesize workspace",
       "steps": [
         {
-          "exec": "npx projen"
+          "exec": "yarn projen"
         }
       ]
     },
@@ -185,7 +185,7 @@
       "description": "Run tests for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=test --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=test --output-style=stream --nx-bail",
           "receiveArgs": true
         },
         {
@@ -239,16 +239,16 @@
       "name": "upgrade-deps",
       "steps": [
         {
-          "exec": "npx npm-check-updates --deep --rejectVersion 0.0.0 -u"
+          "exec": "yarn npm-check-updates --deep --rejectVersion 0.0.0 -u"
         },
         {
-          "exec": "npx syncpack fix-mismatches"
+          "exec": "yarn syncpack fix-mismatches"
         },
         {
           "exec": "yarn install"
         },
         {
-          "exec": "npx projen"
+          "exec": "yarn projen"
         }
       ]
     },
@@ -257,7 +257,7 @@
       "description": "Watch & compile in the background for all affected projects",
       "steps": [
         {
-          "exec": "npx nx run-many --target=watch --output-style=stream --skip-nx-cache --nx-ignore-cycles --nx-bail",
+          "exec": "yarn nx run-many --target=watch --output-style=stream --skip-nx-cache --nx-ignore-cycles --nx-bail",
           "receiveArgs": true
         }
       ]

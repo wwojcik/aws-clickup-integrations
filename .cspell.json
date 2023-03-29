@@ -27,6 +27,7 @@
     "eslint",
     "husky",
     "npm-check-updates",
+    "nx",
     "prettier",
     "projen",
     "syncpack",
