@@ -22,7 +22,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^14",
+      "version": "^16",
       "type": "build"
     },
     {
@@ -90,6 +90,10 @@
     },
     {
       "name": "npm-check-updates",
+      "type": "build"
+    },
+    {
+      "name": "nx",
       "type": "build"
     },
     {
