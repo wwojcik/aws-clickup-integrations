@@ -31,7 +31,8 @@ recommender.vscodeExtensionRecommendations.addRecommendations(
   "editorconfig.editorconfig",
   "esbenp.prettier-vscode",
   "dbaeumer.vscode-eslint",
-  "amazonwebservices.aws-toolkit-vscode"
+  "amazonwebservices.aws-toolkit-vscode",
+  "github.vscode-codeql"
 );
 
 new CodeOfConduct(project, {
