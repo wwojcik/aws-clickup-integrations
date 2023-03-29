@@ -162,15 +162,6 @@
         }
       ]
     },
-    "spellcheck": {
-      "name": "spellcheck",
-      "description": "check all the files for spelling errors",
-      "steps": [
-        {
-          "exec": "cspell lint --gitignore --dot --show-suggestions -e \".git/**\" \"**\""
-        }
-      ]
-    },
     "synth-workspace": {
       "name": "synth-workspace",
       "description": "Synthesize workspace",
@@ -187,9 +178,6 @@
         {
           "exec": "yarn nx run-many --target=test --output-style=stream --nx-bail",
           "receiveArgs": true
-        },
-        {
-          "spawn": "spellcheck"
         },
         {
           "spawn": "eslint:json"

@@ -55,9 +55,7 @@ jspm_packages/
 !/.eslintrc-json.json
 !/CODE_OF_CONDUCT.md
 !/.editorconfig
-!/.cspell.json
 !/.commitlintrc.json
 !/.vscode/extensions.json
-!/.husky/pre-commit
 !/.husky/commit-msg
 !/.husky/pre-push
