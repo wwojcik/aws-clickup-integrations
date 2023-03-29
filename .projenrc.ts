@@ -24,9 +24,14 @@ const project = new nx_monorepo.NxMonorepoProject({
   // packageName: undefined,  /* The "name" in package.json. */
 });
 
-const recommender = new Recommended(project, {});
+const recommender = new Recommended(project, {
+  cSpell: false,
+});
 recommender.vscodeExtensionRecommendations.addRecommendations(
-  "editorconfig.editorconfig"
+  "editorconfig.editorconfig",
+  "esbenp.prettier-vscode",
+  "dbaeumer.vscode-eslint",
+  "amazonwebservices.aws-toolkit-vscode"
 );
 
 new CodeOfConduct(project, {
