@@ -30,8 +30,8 @@
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@mountainpass/cool-bits-for-projen": "^0.2.8",
-    "@nrwl/cli": "^15.8.9",
-    "@nrwl/workspace": "^15.8.9",
+    "@nrwl/cli": "^15.9.1",
+    "@nrwl/workspace": "^15.9.1",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
@@ -48,17 +48,17 @@
     "eslint-plugin-unicorn": "^46.0.0",
     "husky": "^8.0.3",
     "npm-check-updates": "^16.9.0",
-    "nx": "^15.8.9",
+    "nx": "^15.9.1",
     "prettier": "^2.8.7",
-    "projen": "^0.70.0",
+    "projen": "^0.70.1",
     "syncpack": "^9.8.4",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.72.0",
-    "cdk-nag": "^2.25.0",
-    "constructs": "^10.1.296"
+    "cdk-nag": "^2.25.1",
+    "constructs": "^10.1.297"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
