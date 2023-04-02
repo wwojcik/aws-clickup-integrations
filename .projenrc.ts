@@ -5,6 +5,7 @@ import {
 } from "@mountainpass/cool-bits-for-projen";
 import { nx_monorepo } from "aws-prototyping-sdk";
 import { IniFile } from "projen";
+import { UpgradeDependenciesSchedule } from "projen/lib/javascript";
 const project = new nx_monorepo.NxMonorepoProject({
   defaultReleaseBranch: "main",
   devDeps: ["aws-prototyping-sdk", "@mountainpass/cool-bits-for-projen"],
@@ -14,6 +15,11 @@ const project = new nx_monorepo.NxMonorepoProject({
   github: true,
   autoApproveUpgrades: true,
   gitignore: [".nx/cache"],
+  depsUpgradeOptions: {
+    workflowOptions: {
+      schedule: UpgradeDependenciesSchedule.WEEKLY,
+    },
+  },
   autoApproveOptions: {
     allowedUsernames: ["wwojcik", "dependabot[bot]", "github-bot"],
   },
