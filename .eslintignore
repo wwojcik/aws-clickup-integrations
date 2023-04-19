@@ -15,7 +15,6 @@
 .husky/pre-push
 .mergify.yml
 .npmignore
-.nx/plugins/nx-monorepo-plugin.js
 .nxignore
 .prettierignore
 .prettierrc.json
