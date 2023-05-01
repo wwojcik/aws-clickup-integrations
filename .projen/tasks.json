@@ -8,7 +8,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=build --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=build --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -53,7 +53,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=compile --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=compile --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -87,7 +87,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=eslint --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=eslint --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -106,7 +106,7 @@
       "description": "Generate dependency graph for monorepo",
       "steps": [
         {
-          "exec": "yarn run nx graph",
+          "exec": "yarn nx graph",
           "receiveArgs": true
         }
       ]
@@ -137,7 +137,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=package --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=package --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -150,7 +150,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=post-compile --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=post-compile --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -167,7 +167,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=pre-compile --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=pre-compile --output-style=stream --nx-bail",
           "receiveArgs": true
         }
       ]
@@ -189,7 +189,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many",
+          "exec": "yarn nx run-many",
           "receiveArgs": true
         }
       ]
@@ -199,7 +199,7 @@
       "description": "Synthesize workspace",
       "steps": [
         {
-          "exec": "yarn run projen"
+          "exec": "yarn projen"
         }
       ]
     },
@@ -211,7 +211,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=test --output-style=stream --nx-bail",
+          "exec": "yarn nx run-many --target=test --output-style=stream --nx-bail",
           "receiveArgs": true
         },
         {
@@ -262,16 +262,16 @@
       "name": "upgrade-deps",
       "steps": [
         {
-          "exec": "yarn run npm-check-updates --deep --rejectVersion 0.0.0 -u"
+          "exec": "yarn npm-check-updates --deep --rejectVersion 0.0.0 -u"
         },
         {
-          "exec": "yarn run syncpack fix-mismatches"
+          "exec": "yarn syncpack fix-mismatches"
         },
         {
           "exec": "yarn install"
         },
         {
-          "exec": "yarn run projen"
+          "exec": "yarn projen"
         }
       ]
     },
@@ -283,7 +283,7 @@
       },
       "steps": [
         {
-          "exec": "yarn run nx run-many --target=watch --output-style=stream --skip-nx-cache --nx-ignore-cycles --nx-bail",
+          "exec": "yarn nx run-many --target=watch --output-style=stream --skip-nx-cache --nx-ignore-cycles --nx-bail",
           "receiveArgs": true
         }
       ]

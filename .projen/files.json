@@ -16,6 +16,7 @@
     ".husky/pre-push",
     ".mergify.yml",
     ".npmignore",
+    ".npmrc",
     ".nxignore",
     ".prettierignore",
     ".prettierrc.json",

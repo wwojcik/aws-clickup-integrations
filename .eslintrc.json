@@ -195,6 +195,7 @@
         ".gitignore",
         ".mergify.yml",
         ".npmignore",
+        ".npmrc",
         ".nxignore",
         ".prettierignore",
         ".prettierrc.json",
