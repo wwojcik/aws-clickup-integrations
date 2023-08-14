@@ -28,8 +28,8 @@
     "organization": false
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@mountainpass/cool-bits-for-projen": "^0.2.8",
     "@nrwl/cli": "^15.9.4",
     "@nrwl/workspace": "^15.9.4",
@@ -39,8 +39,8 @@
     "aws-prototyping-sdk": "^0.17.4",
     "eslint": "^8",
     "eslint-config-prettier": "^8.10.0",
-    "eslint-import-resolver-node": "^0.3.8",
-    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-jsdoc": "^40.3.0",
     "eslint-plugin-jsonc": "^2.9.0",
@@ -48,17 +48,17 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unicorn": "^46.0.1",
     "husky": "^8.0.3",
-    "npm-check-updates": "^16.10.17",
+    "npm-check-updates": "^16.11.1",
     "nx": "^15.9.4",
     "prettier": "^2.8.8",
-    "projen": "^0.72.4",
+    "projen": "^0.72.11",
     "syncpack": "^9.8.6",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.90.0",
-    "cdk-nag": "^2.27.92",
+    "aws-cdk-lib": "^2.91.0",
+    "cdk-nag": "^2.27.99",
     "constructs": "^10.2.69"
   },
   "resolutions": {
