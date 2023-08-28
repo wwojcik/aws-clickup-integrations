@@ -31,8 +31,8 @@
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@mountainpass/cool-bits-for-projen": "^0.2.8",
-    "@nrwl/cli": "^15.9.4",
-    "@nrwl/workspace": "^15.9.4",
+    "@nrwl/cli": "^15.9.6",
+    "@nrwl/workspace": "^15.9.6",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
@@ -48,17 +48,17 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unicorn": "^46.0.1",
     "husky": "^8.0.3",
-    "npm-check-updates": "^16.12.2",
-    "nx": "^15.9.4",
+    "npm-check-updates": "^16.13.1",
+    "nx": "^15.9.6",
     "prettier": "^2.8.8",
-    "projen": "^0.72.18",
+    "projen": "^0.72.26",
     "syncpack": "^9.8.6",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.92.0",
-    "cdk-nag": "^2.27.106",
+    "aws-cdk-lib": "^2.93.0",
+    "cdk-nag": "^2.27.113",
     "constructs": "^10.2.69"
   },
   "resolutions": {
