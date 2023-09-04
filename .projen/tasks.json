@@ -230,7 +230,7 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --filter=@commitlint/cli,@commitlint/config-conventional,@mountainpass/cool-bits-for-projen,@nrwl/cli,@nrwl/workspace,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,aws-prototyping-sdk,eslint-config-prettier,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-jsdoc,eslint-plugin-jsonc,eslint-plugin-no-secrets,eslint-plugin-prettier,eslint-plugin-unicorn,eslint,husky,npm-check-updates,nx,prettier,projen,syncpack,ts-node,typescript,aws-cdk-lib,cdk-nag,constructs"
+          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@commitlint/cli,@commitlint/config-conventional,@mountainpass/cool-bits-for-projen,@nrwl/cli,@nrwl/workspace,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,aws-prototyping-sdk,eslint-config-prettier,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-jsdoc,eslint-plugin-jsonc,eslint-plugin-no-secrets,eslint-plugin-prettier,eslint-plugin-unicorn,eslint,husky,npm-check-updates,nx,prettier,projen,syncpack,ts-node,typescript,aws-cdk-lib,cdk-nag,constructs"
         },
         {
           "exec": "yarn install --check-files"
