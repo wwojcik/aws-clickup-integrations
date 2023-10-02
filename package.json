@@ -28,7 +28,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@mountainpass/cool-bits-for-projen": "^0.2.8",
     "@nrwl/cli": "^15.9.7",
@@ -57,8 +57,8 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.97.0",
-    "cdk-nag": "^2.27.140",
+    "aws-cdk-lib": "^2.99.1",
+    "cdk-nag": "^2.27.147",
     "constructs": "^10.2.70"
   },
   "resolutions": {
