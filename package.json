@@ -41,7 +41,7 @@
     "eslint-config-prettier": "^8.10.0",
     "eslint-import-resolver-node": "^0.3.9",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsdoc": "^40.3.0",
     "eslint-plugin-jsonc": "^2.10.0",
     "eslint-plugin-no-secrets": "^0.8.9",
@@ -57,8 +57,8 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.102.0",
-    "cdk-nag": "^2.27.169",
+    "aws-cdk-lib": "^2.103.1",
+    "cdk-nag": "^2.27.176",
     "constructs": "^10.3.0"
   },
   "resolutions": {
